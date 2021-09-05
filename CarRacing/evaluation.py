@@ -10,7 +10,7 @@ env = gym.make(environment_name)
 env = DummyVecEnv([lambda: env])
 
 # Load model
-PPO_Path = os.path.join(os.path.dirname(os.getcwd()), 'Training', 'Saved Models', 'PPO_Model_CarRacing')
+PPO_Path = os.path.join(os.path.dirname(os.getcwd()), 'Training', 'Saved Models', 'PPO_Model_CarRacing_10M')
 model = PPO.load(PPO_Path, env)
 
 # Evaluate model
